@@ -1,4 +1,4 @@
-const V="3";
+const V="6";
 const C="auto-dash-v"+V;
 const F=["./", "index.html", "manifest.webmanifest", "icon-180.png", "icon-192.png", "icon-512.png", "icon-maskable-512.png", "assets/img-1.png", "assets/img-2.jpg", "assets/img-3.jpg", "assets/img-4.png", "assets/img-5.png"];
 self.addEventListener("install",e=>{e.waitUntil(caches.open(C).then(c=>c.addAll(F)).then(()=>self.skipWaiting()))});
